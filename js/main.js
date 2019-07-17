@@ -1,5 +1,6 @@
 console.clear();
 import '../styles/main.scss'
+import '../index.pug'
 import axios from 'axios'
 import 'regenerator-runtime' // for async
 
