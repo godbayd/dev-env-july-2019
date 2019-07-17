@@ -13,7 +13,7 @@ module.exports = {
         contentBase: path.resolve(__dirname, 'dist'),
         watchContentBase: true,
         hot: true,
-        port: 9000,
+        port: 9001,
         clientLogLevel: 'silent'
     },
     module: {
