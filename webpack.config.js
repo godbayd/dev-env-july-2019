@@ -1,3 +1,5 @@
+// add image support for file loaders
+// make sure to keep some hash for cache busting
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPugPlugin = require('html-webpack-pug-plugin');
@@ -39,6 +41,10 @@ module.exports = {
                     'css-loader',
                     'sass-loader'
                 ]
+            },
+            {
+                test: /\.(jpg|jpeg|gif|svg|png)$/,
+                use: ['file-loader']
             }
         ]
     },
