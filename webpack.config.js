@@ -43,8 +43,14 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(jpg|jpeg|gif|svg|png)$/,
-                use: ['file-loader']
+                test: /\.(jpe?g|gif|svg|png)$/,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[hash].[ext]',
+                        outputPath: 'images'
+                    }
+                }
             }
         ]
     },
